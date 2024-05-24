@@ -1,0 +1,97 @@
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.ChangeScheduleRecord-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 20px;
+}
+.labelsinputs-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.labels{
+    display: flex;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 89px;
+    margin-right: 40px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 59px;
+}
+.inputs>input, .inputs>select{
+    height: 47px;
+    border-radius: 10px;
+    border: 1px solid gray; 
+    padding-left: 10px;
+    background: rgb(217, 217, 217);
+}
+input:not(.short){
+    width: 450px;
+}
+.short{
+    width: 250px;
+}
+.custom-select {
+    display: flex;
+    border-radius: 10px;
+}
+
+.custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+    padding-right: 20px; /* Оставляем место для нашей стрелки */
+    width: 460px;
+    height: 47px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgb(217, 217, 217);
+    padding-left: 10px;
+}
+input::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.ChangeScheduleRecordbuttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.ChangeRecordButton{
+    margin-top: 43px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -1.5%;
+    border-radius: 6px;
+    border: none;
+    background: rgb(7, 215, 230);
+    color: black;
+    padding: 14px 13px;
+}
+.ChangeRecordButton:active{
+    color: rgb(7, 215, 230);
+    background-color: black;
+    border-radius: 6px;
+    border: 1px solid rgb(7, 215, 230);
+}
+/* Dark theme */

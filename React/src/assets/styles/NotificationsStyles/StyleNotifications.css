@@ -1,0 +1,66 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.Acception{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(217, 217, 217);
+    width: 400px;
+    border-radius: 15px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.Notification{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(217, 217, 217);
+    padding: 50px 47px;
+    border-radius: 15px;
+    gap: 40px;
+}
+.labels{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inputs input{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.nextPatient{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.AcceptionButtons{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 44px;
+}
+.AcceptionButtons button{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(7, 215, 230);
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+}

@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 14px;
+}
+.header-elements{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.header-elements .ul-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0;
+}
+.ul-buttons li{
+    list-style-type: none;
+    color: rgb(24, 160, 251);
+    font-size: 15px;
+}
+.header-elements, .footer-elements{
+    display: flex;
+    align-items: center;
+}
+.header-elements .buttons{
+    margin: 0 auto;
+    gap: 10px;
+}
+.header-elements .buttons button{
+    width: 130px;
+}
+.header-elements .buttons .Loginbtn{
+    color: rgb(7, 215, 230);
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    border: 2px solid rgb(7, 215, 230);
+}
+.header-elements .buttons .Signinbtn{
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    background: rgb(7, 215, 230);
+    color: black;
+}
+.header-elements .buttons .Logoutbtn{
+    color: red;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+.dark .header-elements .buttons .Logoutbtn,
+.dark .header-elements .buttons .Loginbtn{
+    background-color: black;
+}
+.Loginbtn:hover, .Signinbtn:hover, .Logoutbtn:hover{
+    cursor: pointer;
+}
+header .buttons .Loginbtn:active{
+    border-radius: 6px;
+    background: rgb(7, 215, 230);
+    color: white;
+}
+header .buttons .Signinbtn:active{
+    color: rgb(7, 215, 230);
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(7, 215, 230);
+}
+header .buttons .Logoutbtn:active{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.header-elements .buttons .theme-button {
+    width: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .theme-icon {
+    width: 34px;
+    height: 34px;
+  }

@@ -1,0 +1,90 @@
+main{
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.Search{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    height: 37px;
+    width: 250px;
+    border: 1px solid 808080;
+    border-radius: 12px;
+    margin-bottom: 44px;
+}
+.Scheduleform{
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 441px;
+    padding: 27px 15px;
+    background-color: rgb(217, 217, 217);
+    border-radius: 15px;
+}
+.ScheduleButtons{
+    /* max-width: 1147px; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ScheduleItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.ScheduleItem input{
+    height: 27px;
+    padding-left: 8px;
+    border-radius: 10px;
+}
+.ScheduleItem input[type="datetime-local"] {
+    width: 150px;
+}
+.ScheduleItem input[type="checkbox"] {
+    transform: scale(0.8);
+    width: 150px;
+}
+/* .ScheduleItem input[type="checkbox"]:checked {
+    background-color: rgb(7, 215, 230);/* Зеленый цвет 
+} */
+
+.longer{
+    width: 40%;
+}
+.FormButtons{
+    width: auto;
+    border: none;
+    margin-top: 47px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -1.5%;
+    border-radius: 6px;
+    background: rgb(7, 215, 230);
+    color: black;
+    padding: 20px 25px;
+}
+/* .ScheduleItems{
+    display: flex;
+    gap: 49px;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+}
+#patient_name, #doctor_name{
+    width: 301px;
+}
+#appointment_date{
+    width: 247px;
+} */
+/* Dark theme */
+.dark .Scheduleform{
+    background-color: gray;
+}

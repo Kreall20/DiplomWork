@@ -1,0 +1,79 @@
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.insertdoctor-form{
+    display: flex;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+}
+.labelsinputs-container{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+.labels{
+    display: flex;
+    height: 47px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 89px;
+    margin-right: 40px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 59px;
+}
+.inputs>input, .inputs>select{
+    height: 47px;
+    border-radius: 10px;
+    border: 1px solid gray; 
+    padding-left: 10px;
+    background: rgb(217, 217, 217);
+}
+input:not(.short){
+    width: 450px;
+}
+input {
+    width: 450px;
+    height: 47px;
+    border-radius: 10px;
+    border: 1px solid black; /* Заменяем border-color на border */
+    padding-left: 10px;
+    background: rgb(217, 217, 217);
+}
+input::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+.Changebtn{
+    width: 200px;
+    margin-top: 43px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -1.5%;
+    border-radius: 6px;
+    border: none;
+    background: rgb(7, 215, 230);
+    color: black;
+    padding: 14px 13px;
+}
+.Changebtn:active{
+    color: rgb(7, 215, 230);
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(7, 215, 230);
+}

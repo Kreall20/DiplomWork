@@ -1,0 +1,100 @@
+ :root{
+ /* Light theme colors */
+ --background-color-light: white;
+ --text-color-light: black;
+ --border-color-light: #808080;
+ --input-background-color-light: white;
+ --input-text-color-light: black;
+
+ /* Dark theme colors */
+ --background-color-dark: black;
+ --text-color-dark: white;
+ --border-color-dark: rgb(217, 217, 217);
+ --input-background-color-dark: gray;
+ --input-text-color-dark: white;
+}
+*{
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    margin: 0;
+}
+.dark{
+    background: var(--background-color-dark);
+}
+.light{
+    background: var(--background-color-light);
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    width: 70px;
+    margin-right: 10px;
+}
+.title{
+    width: 188px;
+}
+.title span{
+    color: rgb(7, 215, 230);
+}
+.Search{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    height: 37px;
+    width: 250px;
+    border: 1px solid #808080;
+    border-radius: 12px;
+    margin-bottom: 44px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none; 
+    gap: 10px;
+}
+.buttons button{
+    width: auto;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -1.5%;
+}
+
+/* Dark theme */
+.dark label, .dark .remember-me,
+.dark .title, .dark h1{
+    color: white;
+}
+.dark .Loginbtn, .dark .Logoutbtn{
+    background: black;
+}
+.dark .inputs input,.dark .inputs select{
+    background-color: gray;
+    color: white;
+}
+.dark .Searchform{
+    background-color: black;
+}
+.dark .Search{
+    background-color: black;
+    border: 1px solid rgb(217, 217, 217);
+    color: white;
+}
+.dark .Search::placeholder{
+    color: rgb(217, 217, 217);
+}
