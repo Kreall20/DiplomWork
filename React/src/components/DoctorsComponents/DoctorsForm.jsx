@@ -1,6 +1,9 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/DoctorsStyles/StyleDoctors.css'
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import InsertDoctorFormPage from '../../pages/Doctors/InsertDoctorFormPage';
+import OpenDoctorFormPage from '../../pages/Doctors/OpenDoctorFormPage';
+import SchedulePage from '../../pages/Schedule/SchedulePage';
 
 
 const DoctorsForm = () => {
@@ -20,10 +23,16 @@ const DoctorsForm = () => {
             </form>
             </div>
             <div className="CardsButtons">
-            <button className="CardsButton">Добавить врача</button>
-            <button className="CardsButton">Открыть данные врача</button>
-            <button className="CardsButton">Показать график</button>
-            <button className="CardsButton">Удалить</button>
+                {/* <Link to="/doctors/insertDoctor">
+                    <button className="CardsButton">Добавить врача</button>
+                </Link>
+                <Link to="/doctors/openDoctor">
+                    <button className="CardsButton">Открыть данные врача</button>
+                </Link>
+                <Link to="/doctors/schedule">
+                    <button className="CardsButton">Показать график</button>
+                </Link> */}
+                <button className="CardsButton">Удалить</button>
             </div>
         </>
     );

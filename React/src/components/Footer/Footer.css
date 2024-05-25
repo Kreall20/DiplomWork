@@ -21,6 +21,9 @@ footer .container{
 .footer-elements ul li{
     color: white;
 }
+.footer-elements ul .links{
+    color: rgb(7, 215, 230);
+}
 footer{
     background: rgb(7, 30, 32);
 }

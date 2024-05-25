@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './assets/styles/global.css'
 import Account from './pages/Account/AccountPage.jsx'
 import ChangeAccount from './pages/Account/ChangeAccountPage.jsx'
@@ -23,6 +24,7 @@ import InsertScheduleRecordPage from './pages/Schedule/InsertScheduleRecordPage.
 import OpenScheduleRecordPage from './pages/Schedule/OpenScheduleRecordPage.jsx'
 import SchedulePage from './pages/Schedule/SchedulePage.jsx'
 import { ThemeProvider } from './providers/ThemeProvider.jsx';
+import DoctorsPage from './pages/Doctors/DoctorsPage.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,9 +32,10 @@ function App() {
   return (
     <>
     <ThemeProvider>
+    <Router>
       <Header />
 
-      <SchedulePage />
+      {/* <SchedulePage /> */}
       {/* {/* <Account />   */}
       {/* <ChangeAccount />  */}
 
@@ -64,7 +67,26 @@ function App() {
       <SchedulePage /> */}
 
       {/* <OpenTothRecordPage /> */}
+
+      <Routes>
+          <Route path="/" element={<SchedulePage />} />
+          <Route path="/medicalCards" element={<MedicalCardsPage />} />
+
+
+          <Route path="/schedule" element={<SchedulePage />} />
+
+
+          <Route path="/doctors" element={<DoctorsPage />} />
+          {/* <Route path="/doctors/insertDoctor" element={<InsertDoctorFormPage/>} /> */}
+          {/* <Route path="/doctors/openDoctor" element={<OpenDoctorFormPage />} />
+          <Route path="/doctors/schedule" element={<SchedulePage />} /> */}
+
+          <Route path="/reports" element={<ReportsPage />} />
+
+        </Routes>
+
       <Footer />
+      </Router>
       </ThemeProvider>
     </>
   )

@@ -25,11 +25,9 @@ h1{
     height: 441px;
     border-radius: 15px;
     background-color: rgb(217, 217, 217);
-    padding: 27px;
 }
-.ScheduleButtons{
+.ReportButtons{
     max-width: 1147px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
@@ -50,13 +48,13 @@ h1{
 .ScheduleItem input[type="checkbox"]:checked {
     background-color: rgb(7, 215, 230);/* Зеленый цвет */
 }
-.longer{
+/* .longer{
     width: 10%;
-}
+} */
 .ScheduleItem.payment input {
     width: 90px;
 }
-.FormButtons{
+.ReportButton{
     width: auto;
     border: none;
     margin-top: 47px;
@@ -68,6 +66,9 @@ h1{
     background: rgb(7, 215, 230);
     color: black;
     padding: 20px 25px;
+}
+.FormButtons button{
+    
 }
 .ReportContainer{
     max-width: 1147px;

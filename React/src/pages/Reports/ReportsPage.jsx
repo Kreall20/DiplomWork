@@ -12,8 +12,8 @@ const ReportsPage = () => {
           <SearchForm />
           <ScheduleForm />
           <DateReportForm />
-          <div className="ScheduleButtons">
-            <button className="FormButtons">Печать</button>
+          <div className="ReportButtons">
+            <button className="ReportButton">Печать</button>
           </div>
         </main>
       </div>

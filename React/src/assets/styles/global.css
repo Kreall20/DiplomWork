@@ -33,7 +33,9 @@ body{
     margin: 0 auto;
     margin-bottom: 100px;
 }
-
+.links{
+    text-decoration: none;
+}
 
 .icon{
     display: flex;
@@ -73,6 +75,9 @@ body{
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -1.5%;
+}
+.links{
+    color: white;
 }
 
 /* Dark theme */
