@@ -21,7 +21,6 @@ const AccountPage = () => {
                 </div>
                 <div className="buttons">
                     <button className="Loginbtn">Log in</button>
-                    <button className="Signinbtn">Sign in</button>
                 </div>
             </div>
         </form>

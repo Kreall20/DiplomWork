@@ -91,3 +91,6 @@ header .buttons .Logoutbtn:active{
     width: 34px;
     height: 34px;
   }
+  .dark .header-elements .links{
+    color: rgb(7, 215, 230);
+  }

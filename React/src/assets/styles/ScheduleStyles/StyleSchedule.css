@@ -43,6 +43,7 @@ h1{
     height: 27px;
     padding-left: 8px;
     border-radius: 10px;
+    background-color: white;
 }
 .ScheduleItem input[type="datetime-local"] {
     width: 150px;
@@ -58,10 +59,13 @@ h1{
 .longer{
     width: 40%;
 }
+.ScheduleButtons{
+    margin-top: 47px;
+}
 .FormButtons{
     width: auto;
     border: none;
-    margin-top: 47px;
+    /* margin-top: 47px; */
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;
@@ -69,6 +73,9 @@ h1{
     border-radius: 6px;
     background: rgb(7, 215, 230);
     color: black;
+    padding: 20px 25px;
+}
+.FormButton a{
     padding: 20px 25px;
 }
 /* .ScheduleItems{
@@ -87,4 +94,7 @@ h1{
 /* Dark theme */
 .dark .Scheduleform{
     background-color: gray;
+}
+.dark .ScheduleItem input{
+    background-color: rgb(217, 217, 217);
 }

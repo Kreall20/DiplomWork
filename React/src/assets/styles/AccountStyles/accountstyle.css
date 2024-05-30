@@ -13,7 +13,7 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 140px auto;
+    margin: 0px auto;
 }
 
 .form-group{
@@ -25,7 +25,9 @@ h1{
     font-size: 25px;
     font-weight: 500;
 }
-
+.form-group input{
+    background-color: white;
+}
 .form-group .second{
     margin-bottom: 40px;
 }
@@ -67,32 +69,32 @@ input::placeholder {
     letter-spacing: -1.5%;
 }
 .Loginbtn{
-    color: rgb(7, 215, 230);
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid rgb(7, 215, 230);
-}
-.Signinbtn{
     border-radius: 6px;
     border: none;
     background: rgb(7, 215, 230);
     color: black;
 }
+/* .Signinbtn{
+    border-radius: 6px;
+    border: none;
+    background: rgb(7, 215, 230);
+    color: black;
+} */
 .Loginbtn:hover, .Signinbtn:hover{
     cursor: pointer;
 }
 .Loginbtn:active{
-    border-radius: 6px;
-    border: none;
-    background: rgb(7, 215, 230);
-    color: white;
-}
-.Signinbtn:active{
     color: rgb(7, 215, 230);
     background-color: black;
     border-radius: 5px;
     border: 2px solid rgb(7, 215, 230);
 }
+/* .Signinbtn:active{
+    color: rgb(7, 215, 230);
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(7, 215, 230);
+} */
 
 /* Dark theme */
 .dark header .title{
@@ -100,4 +102,10 @@ input::placeholder {
 }
 .dark .form-group input{
     background: black;
+}
+.dark .form-group input::placeholder{
+    color: white;
+}
+.dark .form-group input{
+    color:white;
 }

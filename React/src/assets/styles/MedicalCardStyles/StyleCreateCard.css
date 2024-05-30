@@ -45,6 +45,7 @@ h1{
     width: 100%;
     height: 27px;
     border-radius: 10px;
+    background-color: white;
 }
 .CardsButton{
     width: 200px;
@@ -62,4 +63,7 @@ h1{
 /* Dark theme */
 .dark .PatientForm{
     background-color: gray;
+}
+.dark .PatientFormItem input{
+    background-color: rgb(217, 217, 217);
 }

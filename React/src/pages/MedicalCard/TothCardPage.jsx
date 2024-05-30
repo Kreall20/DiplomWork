@@ -2,7 +2,7 @@ import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleTeth.css'
 import Toth from '../../assets/images/Toth.svg'
 import Teth from '../../assets/images/Teth.svg'
-
+import { Link } from 'react-router-dom'
 
 const TothCardPage = () => {
     return(
@@ -32,10 +32,10 @@ const TothCardPage = () => {
         </form>
         </div>
         <div className="CardsButtons">
-            <button className="CardsButton">Добавить запись</button>
-            <button className="CardsButton">Открыть записи</button>
-            <button className="CardsButton">Печать</button>
-            <button className="CardsButton">Удалить</button>
+            <Link to="/medicalCards/card/add-record"><button class="CardsButton">Добавить запись</button></Link>
+            <Link to="/medicalCards/card/open-records"><button class="CardsButton">Открыть записи</button></Link>
+            <Link to="/medicalCards/print"><button class="CardsButton">Печать</button></Link>
+            <Link to="/medicalCards/delete-card"><button class="CardsButton">Удалить</button></Link>
         </div>
     </main>
     );

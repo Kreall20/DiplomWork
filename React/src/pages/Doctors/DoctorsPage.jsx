@@ -11,6 +11,7 @@ const DoctorsPage = () => {
         <h1>Врачи</h1>
         <SearchDoctors />
         <DoctorsForm />
+
       </main>
     </div>
     );

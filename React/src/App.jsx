@@ -3,10 +3,9 @@ import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './assets/styles/global.css'
-import Account from './pages/Account/AccountPage.jsx'
 import ChangeAccount from './pages/Account/ChangeAccountPage.jsx'
 import Doctors from './pages/Doctors/DoctorsPage.jsx'
-import OpenDoctorForm from './pages/Doctors/OpenDoctorFormPage.jsx'
+import OpenDoctorFormPage from './pages/Doctors/OpenDoctorFormPage.jsx'
 import ChangeDoctorForm from './pages/Doctors/ChangeDoctorPage.jsx'
 import InsertDoctorForm from './pages/Doctors/InsertDoctorFormPage.jsx'
 import ChangeCardPage from './pages/MedicalCard/ChangeCardPage.jsx'
@@ -25,67 +24,45 @@ import OpenScheduleRecordPage from './pages/Schedule/OpenScheduleRecordPage.jsx'
 import SchedulePage from './pages/Schedule/SchedulePage.jsx'
 import { ThemeProvider } from './providers/ThemeProvider.jsx';
 import DoctorsPage from './pages/Doctors/DoctorsPage.jsx';
+import AdminPage from './pages/Account/AdminPage.jsx';
+import AccountPage from './pages/Account/AccountPage.jsx';
+import InsertDoctorFormPage from './pages/Doctors/InsertDoctorFormPage.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const usertype = 'admin';
   return (
     <>
     <ThemeProvider>
-    <Router>
-      <Header />
+    <Router >
+      <Header userType = {usertype}/>
 
-      {/* <SchedulePage /> */}
-      {/* {/* <Account />   */}
-      {/* <ChangeAccount />  */}
+    <Routes>
+              <Route path="/" element={<AccountPage />} />
+              <Route path="/login" element={<AccountPage />} />
+              <Route path="/admin" element={<AdminPage />} />
+              <Route path="/changeaccount" element={<ChangeAccount />} />
 
-      {/* <Doctors /> */}
-      {/* <OpenDoctorForm />
-      <InsertDoctorForm />
-      <ChangeDoctorForm />
+              <Route path="/schedule" element={<SchedulePage />} />
+              <Route path="/schedule/add" element={<InsertScheduleRecordPage />} />
+              <Route path="/schedule/open" element={<OpenScheduleRecordPage />} />
 
-      <ChangeCardPage />
-      <CreateCardPage />
-      <InsertCardRecordPage /> */}
+              <Route path="/medicalCards" element={<MedicalCardsPage />} />
+              <Route path="/medicalCards/add-card" element= {<CreateCardPage />} />
+              <Route path="/medicalCards/open-card" element={<TothCardPage />} />
+              <Route path="/medicalCards/card/add-record" element={<InsertCardRecordPage />} />
+              <Route path="/medicalCards/card/open-records" element={<OpenTothRecordPage />} />
+              <Route path="/medicalCard/card/change-record" element={<ChangeCardPage />} />
 
-      {/* <MedicalCardsPage /> */}
+              <Route path="/doctors" element={<DoctorsPage />} />
+              <Route path= "/doctors/add" element = {<InsertDoctorFormPage />} />
+              <Route path="/doctors/open" element={<OpenDoctorFormPage />} />
+              <Route path="/doctors/schedule" element={<SchedulePage />} />
 
-      {/* <OpenTothRecordPage />
-      <TothCardPage />
-      <TothRecordsPage />
+              <Route path="/reports" element={<ReportsPage />} />
 
-      <ScheduleNotification />
-      <Confirmation /> */}
-      {/* Разобраться с размером */}
+      </Routes>
 
-      {/* <ReportsPage />  */}
-      {/* Разобраться с формой */}
-      
-      {/* <ChangeScheduleRecordPage />
-      <InsertScheduleRecordPage />
-      <OpenScheduleRecordPage />
-      <SchedulePage /> */}
-
-      {/* <OpenTothRecordPage /> */}
-
-      <Routes>
-          <Route path="/" element={<SchedulePage />} />
-          <Route path="/medicalCards" element={<MedicalCardsPage />} />
-
-
-          <Route path="/schedule" element={<SchedulePage />} />
-
-
-          <Route path="/doctors" element={<DoctorsPage />} />
-          {/* <Route path="/doctors/insertDoctor" element={<InsertDoctorFormPage/>} /> */}
-          {/* <Route path="/doctors/openDoctor" element={<OpenDoctorFormPage />} />
-          <Route path="/doctors/schedule" element={<SchedulePage />} /> */}
-
-          <Route path="/reports" element={<ReportsPage />} />
-
-        </Routes>
-
-      <Footer />
+      <Footer userType = {usertype}/>
       </Router>
       </ThemeProvider>
     </>
@@ -93,3 +70,9 @@ function App() {
 }
 
 export default App
+
+
+
+              {/* <Route path="openDoctor" element={<OpenDoctorFormPage />} />
+              <Route path="schedule" element={<SchedulePage />} /> */}
+              {/* <Route path="insertDoctor" element={<InsertDoctorFormPage/>} /> */}

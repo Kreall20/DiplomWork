@@ -2,6 +2,7 @@ import '../../assets/styles/global.css'
 import '../../assets/styles/ScheduleStyles/StyleSchedule.css'
 import ScheduleForm from '../../components/ScheduleComponents/ScheduleForm';
 import SearchForm from '../../components/ScheduleComponents/SearchSchedule';
+import { Link } from 'react-router-dom'; 
 
 
 const SchedulePage = () => {
@@ -12,9 +13,15 @@ const SchedulePage = () => {
             <SearchForm />
             <ScheduleForm />
             <div class="ScheduleButtons">
-                <button class="FormButtons">Добавить запись</button>
-                <button class="FormButtons">Открыть запись</button>
-                <button class="FormButtons">Удалить запись</button>
+                    <Link to="/schedule/add">
+                        <button className ="FormButtons">Добавить запись</button>
+                    </Link>
+                    <Link to="/schedule/open">
+                        <button className="FormButtons">Открыть запись</button>
+                    </Link>
+                    <Link to="/schedule/delete">
+                        <button className="FormButtons">Удалить запись</button>
+                    </Link>
             </div>
         </main>
       </div>

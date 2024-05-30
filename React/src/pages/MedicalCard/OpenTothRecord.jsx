@@ -1,6 +1,6 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleOpenTothRecord.css'
-
+import { Link } from 'react-router-dom';
 
 
 const OpenTothRecordPage = () => {
@@ -32,7 +32,7 @@ const OpenTothRecordPage = () => {
                     <textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
                 </div>
                 <div className="buttons">
-                    <button className="ChangeScheduleRecordbutton">Изменить запись</button>
+                    <Link to = "/medicalCard/card/change-record"><button className="ChangeScheduleRecordbutton">Изменить запись</button></Link>
                     <button className="ChangeScheduleRecordbutton">Печать</button>
                     <button className="ChangeScheduleRecordbutton">Удалить запись</button>
                 </div>

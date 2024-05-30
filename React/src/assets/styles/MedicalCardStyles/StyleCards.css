@@ -40,7 +40,7 @@ h1{
 .CardsButton{
     width: 200px;
     border: none;
-    margin-top: 47px;
+    /* margin-top: 47px; */
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;

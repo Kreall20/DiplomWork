@@ -1,6 +1,6 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleCards.css'
-
+import { Link } from 'react-router-dom'; 
 
 
 const MedicalCardsForm = () => {
@@ -15,10 +15,10 @@ const MedicalCardsForm = () => {
                 </form>
                 </div>
                 <div class="CardsButtons">
-                    <button class="CardsButton">Добавить карточку</button>
-                    <button class="CardsButton">Открыть карточку</button>
-                    <button class="CardsButton">Печать</button>
-                    <button class="CardsButton">Удалить карточку</button>
+                    <Link to="/medicalCards/add-card"><button class="CardsButton">Добавить карточку</button></Link>
+                    <Link to="/medicalCards/open-card"><button class="CardsButton">Открыть карточку</button></Link>
+                    <Link to="/medicalCards/print"><button class="CardsButton">Печать</button></Link>
+                    <Link to="/medicalCards/delete-card"><button class="CardsButton">Удалить карточку</button></Link>
                 </div>
             </>
     );

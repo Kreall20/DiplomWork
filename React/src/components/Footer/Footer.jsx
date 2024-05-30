@@ -3,7 +3,7 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/Иконка.svg';
 
-const Footer = () => {
+const Footer = ({userType}) => {
     return (
         <footer>
             <div className="container">
@@ -16,8 +16,12 @@ const Footer = () => {
                         <li><Link to="/" className='links'>Главная</Link></li>
                         <li><Link to="/schedule" className='links'>График работы</Link></li>
                         <li><Link to="/medicalCards" className='links'>Карточки пациентов</Link></li>
-                        <li><Link to="/doctors" className='links'>Врачи</Link></li>
-                        <li><Link to="/reports" className='links'>Отчеты</Link></li>
+                        {userType === "admin" && (
+                            <>
+                                <li><Link to="/doctors" className='links'>Врачи</Link></li>
+                                <li><Link to="/reports" className='links'>Отчеты</Link></li>
+                            </>
+                            )}
                     </ul> 
                     <div className="buttons">
                         <button className="Loginbtn">Log in</button>

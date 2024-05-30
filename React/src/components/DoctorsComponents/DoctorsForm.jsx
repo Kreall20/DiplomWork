@@ -1,10 +1,14 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/DoctorsStyles/StyleDoctors.css'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, Outlet } from 'react-router-dom';
 import InsertDoctorFormPage from '../../pages/Doctors/InsertDoctorFormPage';
 import OpenDoctorFormPage from '../../pages/Doctors/OpenDoctorFormPage';
 import SchedulePage from '../../pages/Schedule/SchedulePage';
 
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
 const DoctorsForm = () => {
     return(
@@ -23,15 +27,15 @@ const DoctorsForm = () => {
             </form>
             </div>
             <div className="CardsButtons">
-                {/* <Link to="/doctors/insertDoctor">
-                    <button className="CardsButton">Добавить врача</button>
+                <Link to="/doctors/add">
+                    <button className="CardsButton" onClick={scrollToTop}>Добавить врача</button>
                 </Link>
-                <Link to="/doctors/openDoctor">
-                    <button className="CardsButton">Открыть данные врача</button>
+                <Link to="/doctors/open">
+                    <button className="CardsButton" onClick={scrollToTop}>Открыть данные врача</button>
                 </Link>
                 <Link to="/doctors/schedule">
-                    <button className="CardsButton">Показать график</button>
-                </Link> */}
+                    <button className="CardsButton" onClick={scrollToTop}>Показать график</button>
+                </Link>
                 <button className="CardsButton">Удалить</button>
             </div>
         </>
