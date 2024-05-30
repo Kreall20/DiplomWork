@@ -1,26 +1,30 @@
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.ChangeScheduleRecord-form{
+
+.ChangeScheduleRecord-form {
     display: flex;
     flex-direction: column;
 }
-.form-container{
+
+.form-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
 }
-.labelsinputs-container{
+
+.fields-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
-.labels{
+
+.field-labels {
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -28,25 +32,30 @@ h1{
     gap: 89px;
     margin-right: 40px;
 }
-.inputs{
+
+.field-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 59px;
 }
-.inputs>input, .inputs>select{
+
+.field-inputs > input, .field-inputs > select {
     height: 47px;
     border-radius: 10px;
     border: 1px solid gray; 
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input:not(.short){
+
+input:not(.short) {
     width: 450px;
 }
-.short{
+
+.short {
     width: 250px;
 }
+
 .custom-select {
     display: flex;
     border-radius: 10px;
@@ -66,17 +75,20 @@ input:not(.short){
     background: rgb(217, 217, 217);
     padding-left: 10px;
 }
+
 input::placeholder {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-.ChangeScheduleRecordbuttons{
+
+.ChangeScheduleRecord-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.ChangeRecordButton{
+
+.ChangeRecordButton {
     margin-top: 43px;
     font-size: 15px;
     font-weight: 500;
@@ -88,10 +100,15 @@ input::placeholder {
     color: black;
     padding: 14px 13px;
 }
-.ChangeRecordButton:active{
+
+.ChangeRecordButton:active {
     color: rgb(7, 215, 230);
     background-color: black;
     border-radius: 6px;
     border: 1px solid rgb(7, 215, 230);
 }
+
 /* Dark theme */
+.dark .ChangeScheduleRecord-form {
+    background-color: gray;
+}

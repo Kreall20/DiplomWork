@@ -20,7 +20,7 @@ h1{
     align-items: center;
     justify-content: center;
 }
-.labels{
+.OpenScheduleRecord-labels{
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -28,13 +28,13 @@ h1{
     gap: 89px;
     margin-right: 40px;
 }
-.inputs{
+.OpenScheduleRecord-inputs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 59px;
 }
-.inputs>input, .inputs>select{
+.OpenScheduleRecord-inputs>input, .OpenScheduleRecord-inputs>select{
     height: 47px;
     border-radius: 10px;
     border: 1px solid gray; 

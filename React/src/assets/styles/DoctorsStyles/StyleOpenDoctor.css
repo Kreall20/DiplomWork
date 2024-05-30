@@ -1,28 +1,30 @@
-
-
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.opendoctor-form{
+
+.open-doctor-form {
     display: flex;
 }
-.form-container{
+
+.open-doctor-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     gap: 20px;
 }
-.labelsinputs-container{
+
+.open-doctor-labels-inputs-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
-.labels{
+
+.open-doctor-labels {
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -30,23 +32,28 @@ h1{
     gap: 89px;
     margin-right: 40px;
 }
-.inputs{
+
+.open-doctor-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 59px;
 }
-.inputs>input, .inputs>select{
+
+.open-doctor-inputs > input,
+.open-doctor-inputs > select {
     height: 47px;
     border-radius: 10px;
-    border: 1px solid gray; 
+    border: 1px solid gray;
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input:not(.short){
+
+input:not(.short) {
     width: 450px;
 }
-input {
+
+.open-doctor-inputs input {
     width: 450px;
     height: 47px;
     border-radius: 10px;
@@ -54,17 +61,20 @@ input {
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input::placeholder {
+
+.open-doctor-inputs input::placeholder {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-.OpenDoctorButtons{
+
+.open-doctor-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.OpenDoctorButton{
+
+.open-doctor-button {
     margin-top: 43px;
     font-size: 15px;
     font-weight: 500;
@@ -76,7 +86,8 @@ input::placeholder {
     color: black;
     padding: 14px 13px;
 }
-.OpenDoctorButton:active{
+
+.open-doctor-button:active {
     color: rgb(7, 215, 230);
     background-color: black;
     border-radius: 6px;

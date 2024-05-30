@@ -4,19 +4,19 @@ import '../../assets/styles/NotificationsStyles/StyleNotifications.css'
 const ScheduleNotification = () => {
     return(
         <div className="container">
-        <div className="Notification">
-            <div className="labels">
-                <label htmlFor="">Сейчас на записи</label>
-                <label htmlFor="">Следующий в очереди</label>
-            </div>
-            <div className="inputs">
-                <input type="text" />
-                <div className="nextPatient">
+            <div className="Notification">
+                <div className="labelContainer">
+                    <label htmlFor="">Сейчас на записи</label>
+                    <label htmlFor="">Следующий в очереди</label>
+                </div>
+                <div className="inputContainer">
                     <input type="text" />
-                    <input type="date" name="" id="" />
+                    <div className="nextPatient">
+                        <input type="text" />
+                        <input type="date" name="" id="" />
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
         </div>
     );
 };

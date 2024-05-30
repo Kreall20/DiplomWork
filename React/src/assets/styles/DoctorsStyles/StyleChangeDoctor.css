@@ -1,28 +1,30 @@
-
-
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.changedoctor-form{
+
+.change-doctor-form {
     display: flex;
 }
-.form-container{
+
+.change-doctor-form-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     gap: 20px;
 }
-.labelsinputs-container{
+
+.change-doctor-labels-inputs-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
-.labels{
+
+.change-doctor-labels {
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -30,23 +32,28 @@ h1{
     gap: 89px;
     margin-right: 40px;
 }
-.inputs{
+
+.change-doctor-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 59px;
 }
-.inputs>input, .inputs>select{
+
+.change-doctor-inputs > input,
+.change-doctor-inputs > select {
     height: 47px;
     border-radius: 10px;
-    border: 1px solid gray; 
+    border: 1px solid gray;
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input:not(.short){
+
+input:not(.short) {
     width: 450px;
 }
-input {
+
+.change-doctor-inputs input {
     width: 450px;
     height: 47px;
     border-radius: 10px;
@@ -54,12 +61,14 @@ input {
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input::placeholder {
+
+.change-doctor-inputs input::placeholder {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-.Changebtn{
+
+.change-doctor-button {
     width: 200px;
     margin-top: 43px;
     font-size: 15px;
@@ -72,7 +81,8 @@ input::placeholder {
     color: black;
     padding: 14px 13px;
 }
-.Changebtn:active{
+
+.change-doctor-button:active {
     color: rgb(7, 215, 230);
     background-color: black;
     border-radius: 5px;

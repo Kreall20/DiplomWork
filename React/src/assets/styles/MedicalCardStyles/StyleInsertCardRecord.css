@@ -14,6 +14,9 @@ h1{
     margin: 0 auto;
     gap: 20px;
 }
+.form-container input{
+    margin: 0;
+}
 .labelsinputs-container{
     display: flex;
     flex-direction: row;
@@ -22,7 +25,7 @@ h1{
     justify-content: center;
     margin-bottom: 30px;
 }
-.labels{
+.insert-card-record-labels{
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -30,13 +33,13 @@ h1{
     gap: 69px;
     margin-right: 40px;
 }
-.inputs{
+.insert-card-record-inputs{
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 39px;
 }
-.inputs>input, .inputs>select{
+.insert-card-record-inputs > input, .insert-card-record-inputs > select{
     height: 47px;
     border-radius: 10px;
     border: 1px solid gray; 
@@ -70,13 +73,13 @@ input:not(.short){
 .custom-select #TothInput{
     width: 200px;
 }
-.Desription{
+.Description{
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 textarea{
     width: 100%;

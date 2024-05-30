@@ -5,7 +5,7 @@ const Confirmation = () => {
     return(
         <div className="Acception">
             <h3>Вы Уверены ?</h3>
-            <div class="AcceptionButtons">
+            <div class="buttonContainer">
                 <button>Да</button>
                 <button>Отмена</button>
             </div>

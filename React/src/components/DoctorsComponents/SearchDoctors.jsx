@@ -4,14 +4,14 @@ import '../../assets/styles/AccountStyles/accountstyle.css'
 
 
 const SearchDoctors = () => {
-    return(
-        <form className="Searchform" action="">
-          <label htmlFor="searchPatient"></label>
-          <div className="searchblock">
-            <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
-          </div>
-        </form>
-    );
+  return(
+      <form className="search-form" action="">
+        <label htmlFor="searchDoctor"></label>
+        <div className="search-block">
+          <input className="search" id="searchDoctor" type="text" placeholder="Поиск" />
+        </div>
+      </form>
+  );
 };
 
 export default SearchDoctors;

@@ -9,6 +9,7 @@ h1{
 
 .CardForm{
     max-width: 1147px;
+    width: 900px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -33,12 +34,13 @@ h1{
     padding: 0 55px;
 }
 .CardItem input{
-    width: 100%;
+    width: 500px;
     height: 27px;
     border-radius: 10px;
 }
 .CardsButton{
-    width: 200px;
+    width: 150px;
+    height: 60px;
     border: none;
     /* margin-top: 47px; */
     font-size: 15px;

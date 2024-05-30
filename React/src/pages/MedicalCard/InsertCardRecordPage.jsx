@@ -1,8 +1,6 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleInsertCardRecord.css'
 
-
-
 const InsertCardRecordPage = () => {
     return(
         <main>
@@ -10,13 +8,13 @@ const InsertCardRecordPage = () => {
             <form className="InsertCardRecord-form">
                 <div className="form-container">
                     <div className="labelsinputs-container">
-                        <div className="labels">
+                        <div className="insert-card-record-labels">
                             <label htmlFor="patientName">Пациент</label>
                             <label htmlFor="doctor">Врач</label>
                             <label htmlFor="datetime-local">Дата</label>
                             <label htmlFor="Toth">Зуб</label>
                         </div>
-                        <div className="inputs">
+                        <div className="insert-card-record-inputs">
                             <input type="text" id="patientName" name="patientName" placeholder="Пациент"/>
                             <select name="doctors" id="">
                                 <option value=""></option>

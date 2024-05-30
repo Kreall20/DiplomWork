@@ -1,10 +1,7 @@
-import '../../assets/styles/global.css'
-import '../../assets/styles/MedicalCardStyles/StyleTothRecords.css'
-
 const SearchTothRecords = () => {
     return(
         <form className="Searchform" action="">
-            <label htmlFor="searchPatient"></label>
+            <label htmlFor="searchToth"></label>
             {/* <div className="serchblock"> */}
                 <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
         </form>

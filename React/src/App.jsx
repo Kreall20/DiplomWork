@@ -35,7 +35,6 @@ function App() {
     <ThemeProvider>
     <Router >
       <Header userType = {usertype}/>
-
     <Routes>
               <Route path="/" element={<AccountPage />} />
               <Route path="/login" element={<AccountPage />} />
@@ -50,7 +49,7 @@ function App() {
               <Route path="/medicalCards/add-card" element= {<CreateCardPage />} />
               <Route path="/medicalCards/open-card" element={<TothCardPage />} />
               <Route path="/medicalCards/card/add-record" element={<InsertCardRecordPage />} />
-              <Route path="/medicalCards/card/open-records" element={<OpenTothRecordPage />} />
+              <Route path="/medicalCards/card/open-records" element={<TothRecordsPage />} />
               <Route path="/medicalCard/card/change-record" element={<ChangeCardPage />} />
 
               <Route path="/doctors" element={<DoctorsPage />} />

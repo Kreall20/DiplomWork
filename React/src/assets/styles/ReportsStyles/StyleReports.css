@@ -1,12 +1,14 @@
-main{
+main {
     margin: 0 auto;
-}
-h1{
+  }
+  
+  h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 30px;
-}
-.Search{
+  }
+  
+  .Search {
     text-align: center;
     display: flex;
     margin: 0 auto;
@@ -15,8 +17,9 @@ h1{
     border: 1px solid black;
     border-radius: 12px;
     margin-bottom: 44px;
-}
-.Scheduleform{
+  }
+  
+  .ReportForm {
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -25,36 +28,54 @@ h1{
     height: 441px;
     border-radius: 15px;
     background-color: rgb(217, 217, 217);
-}
-.ReportButtons{
+    padding: 27px;
+  }
+  
+  .ReportButtons {
     max-width: 1147px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-}
-.ScheduleItem{
+  }
+  
+  .ReportItem {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 7px;
-}
-.ScheduleItem input{
+  }
+  
+  .ReportItem input {
+    width: 100px;
     height: 27px;
     padding-left: 8px;
     border-radius: 10px;
-}
-.ScheduleItem input[type="checkbox"] {
+  }
+
+  .ReportItem input[type="checkbox"] {
+
     transform: scale(0.8);
-}
-.ScheduleItem input[type="checkbox"]:checked {
+  }
+  .ReportItem input[type = "datetime-local"]{
+    width: 150px;
+  }
+  .check{
+    width: 150px;
+  }
+  .ReportItem.longer input{
+    width: 400px;
+  }
+  .ReportItem input[type="checkbox"]:checked {
     background-color: rgb(7, 215, 230);/* Зеленый цвет */
-}
-/* .longer{
-    width: 10%;
-} */
-.ScheduleItem.payment input {
+  }
+  
+  .ReportItem.payment input {
     width: 90px;
-}
-.ReportButton{
+  }
+  .ReportItem input[type="datetime-local"]{
+    width: 140px;
+  }
+  .ReportButton {
     width: auto;
     border: none;
     margin-top: 47px;
@@ -66,49 +87,54 @@ h1{
     background: rgb(7, 215, 230);
     color: black;
     padding: 20px 25px;
-}
-.FormButtons button{
-    
-}
-.ReportContainer{
+  }
+  
+  .ReportContainer {
     max-width: 1147px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-}
-.date{
+  }
+  
+  .date {
     margin-top: 51px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.date input{
+  }
+  
+  .date input {
     width: 300px;
     height: 37px;
     border-radius: 10px;
     border: 1px solid gray; 
     padding-left: 10px;
     background: rgb(217, 217, 217);
-}
-.onedate{
+  }
+  
+  .onedate {
     display: flex;
     align-items: center;
     gap: 35px;
-}
-.twodate{
+  }
+  
+  .twodate {
     display: flex;
     justify-content: space-between;
     margin-top: 39px;
-}
-.firstdate,.seconddate{
+  }
+  
+  .firstdate, .seconddate {
     display: flex;  
     align-items: center;
     gap: 54px;
-}
-.diff{
+  }
+  
+  .diff {
     width: 300px;
-}
-/* Dark theme */
-.dark .Scheduleform{
+  }
+  
+  /* Dark theme */
+  .dark .ReportForm {
     background-color: gray;
-}
+  }

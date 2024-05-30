@@ -3,10 +3,10 @@ import '../../assets/styles/MedicalCardStyles/StyleCreateCard.css'
 
 const SearchPatientMedicalCard = () => {
     return(
-        <form class="Searchform" action="">
+        <form className="search-form" action="">
             <label htmlFor="searchPatient"></label>
-            <div class="serchblock">
-                <input class="Search" id="searchPatient" type="text" placeholder="Поиск" />
+            <div className="search-block">
+                <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
             </div>
         </form>
     );

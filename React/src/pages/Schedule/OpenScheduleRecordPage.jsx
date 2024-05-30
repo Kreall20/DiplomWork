@@ -9,12 +9,12 @@ const OpenScheduleRecordPage = () => {
             <form className="OpenScheduleRecord-form">
                 <div className="form-container">
                     <div className="labelsinputs-container">
-                    <div className="labels">
+                    <div className="OpenScheduleRecord-labels">
                         <label htmlFor="patientName">Пациент</label>
                         <label htmlFor="doctor">Врач</label>
                         <label htmlFor="datetime-local">Дата</label>
                     </div>
-                    <div className="inputs">
+                    <div className="OpenScheduleRecord-inputs">
                         <input type="text" id="patientName" name="patientName" placeholder="Пациент"/>
                         <select name="doctors" id="">
                             <option value=""></option>

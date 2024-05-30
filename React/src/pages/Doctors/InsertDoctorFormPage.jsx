@@ -5,25 +5,25 @@ import '../../assets/styles/DoctorsStyles/StyleInsertDoctor.css'
 const InsertDoctorFormPage = () => {
     return(
         <div className="container">
-        <h1>Добавить врача</h1>
-        <form className="insertdoctor-form">
-            <div className="form-container">
-                <div className="labelsinputs-container">
-                    <div className="labels">
-                        <label htmlFor="username">ФИО</label>
-                        <label htmlFor="username">Логин</label>
-                        <label htmlFor="username">Пароль</label>
+            <h1>Добавить врача</h1>
+            <form className="insert-doctor-form">
+                <div className="insert-doctor-form-container">
+                    <div className="insert-doctor-labels-inputs-container">
+                        <div className="insert-doctor-labels">
+                            <label htmlFor="fio">ФИО</label>
+                            <label htmlFor="login">Логин</label>
+                            <label htmlFor="password">Пароль</label>
+                        </div>
+                        <div className="insert-doctor-inputs">
+                            <input type="text" id="fio" className="fio" name="fio" placeholder="Фио"/>
+                            <input type="text" id="login" name="login" placeholder="Логин"/>
+                            <input type="password" id="password" name="password" placeholder="Пароль"/>
+                        </div>
                     </div>
-                    <div className="inputs">
-                        <input type="text" id="username" className="FIO" name="username" placeholder="Фио"/>
-                        <input type="text" id="username" name="username" placeholder="Логин"/>
-                        <input type="password" id="username" name="username" placeholder="Пароль"/>
-                    </div>
+                    <button className="insert-doctor-button">Добавить врача</button>
                 </div>
-                <button className="Changebtn">Добавить врача</button>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
     );
 };
 

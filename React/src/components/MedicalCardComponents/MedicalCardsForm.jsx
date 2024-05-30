@@ -1,7 +1,6 @@
-import '../../assets/styles/global.css'
-import '../../assets/styles/MedicalCardStyles/StyleCards.css'
+import '../../assets/styles/global.css';
+import '../../assets/styles/MedicalCardStyles/StyleCards.css';
 import { Link } from 'react-router-dom'; 
-
 
 const MedicalCardsForm = () => {
     return(
@@ -13,14 +12,14 @@ const MedicalCardsForm = () => {
                         <input class="longer" type="text" id="patient_name" name="patient_name"/>
                     </div>
                 </form>
-                </div>
-                <div class="CardsButtons">
-                    <Link to="/medicalCards/add-card"><button class="CardsButton">Добавить карточку</button></Link>
-                    <Link to="/medicalCards/open-card"><button class="CardsButton">Открыть карточку</button></Link>
-                    <Link to="/medicalCards/print"><button class="CardsButton">Печать</button></Link>
-                    <Link to="/medicalCards/delete-card"><button class="CardsButton">Удалить карточку</button></Link>
-                </div>
-            </>
+            </div>
+            <div class="CardsButtons">
+                <Link to="/medicalCards/add-card"><button class="CardsButton">Добавить карточку</button></Link>
+                <Link to="/medicalCards/open-card"><button class="CardsButton">Открыть карточку</button></Link>
+                <Link to="/medicalCards/print"><button class="CardsButton">Печать</button></Link>
+                <Link to="/medicalCards/delete-card"><button class="CardsButton">Удалить карточку</button></Link>
+            </div>
+        </>
     );
 };
 

@@ -1,8 +1,6 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleCreateCard.css'
 
-
-
 const MedicalCardsForm = () => {
     return(
         <>

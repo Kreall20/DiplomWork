@@ -1,26 +1,30 @@
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.ChangeCard-form{
+
+.change-card-form {
     display: flex;
     flex-direction: column;
 }
-.form-container{
+
+.change-card-form-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
 }
-.labelsinputs-container{
+
+.change-card-labels-inputs-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
-.labels{
+
+.change-card-labels {
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -28,58 +32,52 @@ h1{
     gap: 89px;
     margin-right: 40px;
 }
-.inputs{
+
+.change-card-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 59px;
 }
-.inputs>input, .inputs>select{
+
+.change-card-inputs > input,
+.change-card-inputs > select {
     height: 47px;
     border-radius: 10px;
-    border: 1px solid gray; 
+    border: 1px solid gray;
     padding-left: 10px;
     background: rgb(217, 217, 217);
-}
-input:not(.short){
-    width: 450px;
-}
-.short{
-    width: 250px;
-}
-.custom-select {
-    display: flex;
-    border-radius: 10px;
 }
 
-.custom-select select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: transparent;
-    padding-right: 20px; /* Оставляем место для нашей стрелки */
-    width: 460px;
-    height: 47px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    cursor: pointer;
-    background: rgb(217, 217, 217);
-    padding-left: 10px;
+input:not(.short) {
+    width: 450px;
 }
-.custom-select #TothInput{
+
+.short {
+    width: 250px;
+}
+
+#doctorSelect {
+    width: 460px;
+}
+
+#TothInput {
     width: 200px;
 }
+
 input::placeholder {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-.ChangeScheduleRecordbuttons{
+
+.change-card-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.ChangeScheduleRecordbutton{
+
+.change-card-button {
     margin-top: 43px;
     font-size: 15px;
     font-weight: 500;
@@ -91,7 +89,8 @@ input::placeholder {
     color: black;
     padding: 14px 13px;
 }
-.ChangeScheduleRecordbutton:active{
+
+.change-card-button:active {
     color: rgb(7, 215, 230);
     background-color: black;
     border-radius: 6px;

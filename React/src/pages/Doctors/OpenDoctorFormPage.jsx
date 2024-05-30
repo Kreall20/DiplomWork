@@ -1,34 +1,32 @@
-import '../../assets/styles/global.css'
-import '../../assets/styles/DoctorsStyles/StyleOpenDoctor.css'
-
+import '../../assets/styles/global.css';
+import '../../assets/styles/DoctorsStyles/StyleOpenDoctor.css';
 
 const OpenDoctorFormPage = () => {
     return(
         <div className="container">
-        <h1>Врач</h1>
-        <form className="opendoctor-form">
-            <div className="form-container">
-                <div className="labelsinputs-container">
-                    <div className="labels">
-                        <label htmlFor="username">ФИО</label>
-                        <label htmlFor="username">Логин</label>
-                        <label htmlFor="username">Пароль</label>
+            <h1>Врач</h1>
+            <form className="open-doctor-form">
+                <div className="open-doctor-form-container">
+                    <div className="open-doctor-labels-inputs-container">
+                        <div className="open-doctor-labels">
+                            <label htmlFor="fio">ФИО</label>
+                            <label htmlFor="login">Логин</label>
+                            <label htmlFor="password">Пароль</label>
+                        </div>
+                        <div className="open-doctor-inputs">
+                            <input type="text" id="fio" className="fio" name="fio" placeholder="ФИО"/>
+                            <input type="text" id="login" name="login" placeholder="Логин"/>
+                            <input type="password" id="password" name="password" placeholder="Пароль"/>
+                        </div>
                     </div>
-                    <div className="inputs">
-                        <input type="text" id="username" className="FIO" name="username" placeholder="Фио"/>
-                        <input type="text" id="username" name="username" placeholder="Логин"/>
-                        <input type="password" id="username" name="username" placeholder="Пароль"/>
+                    <div className="open-doctor-buttons">
+                        <button className="open-doctor-button">Изменить</button>
+                        <button className="open-doctor-button">Удалить</button>
                     </div>
                 </div>
-                <div className="OpenDoctorButtons">
-                    <button className="OpenDoctorButton">Изменить</button>
-                    <button className="OpenDoctorButton">Удалить</button>
-                </div>
-            </div>
-        </form>
+            </form>
         </div>
     );
 };
 
 export default OpenDoctorFormPage;
-

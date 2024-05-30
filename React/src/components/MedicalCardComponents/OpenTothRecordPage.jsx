@@ -1,38 +1,37 @@
-import '../../assets/styles/global.css'
-import '../../assets/styles/MedicalCardStyles/StyleOpenTothRecord.css'
-
-
+import '../../assets/styles/global.css';
+import '../../assets/styles/MedicalCardStyles/StyleOpenTothRecord.css';
+import { Link } from 'react-router-dom';
 
 const OpenTothRecordPage = () => {
     return(
         <main>
             <h1>Запись</h1>
-            <form className="OpenTothRecord-form">
-                <div className="form-container">
-                    <div className="labelsinputs-container">
-                        <div className="labels">
-                            <label htmlFor="patientName">Пациент</label>
-                            <label htmlFor="doctor">Врач</label>
-                            <label htmlFor="datetime-local">Дата</label>
-                            <label htmlFor="Toth">Зуб</label>
+            <form className="OpenTothRecordForm">
+                <div className="formContainer">
+                    <div className="labelsInputsContainer">
+                        <div className="OpenTothRecord-labels">
+                            <label htmlFor="openPatientName">Пациент</label>
+                            <label htmlFor="openDoctor">Врач</label>
+                            <label htmlFor="openDateTime">Дата</label>
+                            <label htmlFor="openTooth">Зуб</label>
                         </div>
-                        <div className="inputs">
-                            <input type="text" id="patientName" name="patientName" placeholder="Пациент"/>
-                            <select name="doctors" id="">
+                        <div className="OpenTothRecord--inputs">
+                            <input type="text" id="openPatientName" name="openPatientName" placeholder="Пациент"/>
+                            <select name="openDoctors" id="openDoctor">
                                 <option value=""></option>
                             </select>
-                            <input type="datetime-local" className="short" id="date" name="date"/>
-                            <select name="Teth" className="short" id="TothInput">
+                            <input type="datetime-local" className="short" id="openDateTime" name="openDateTime"/>
+                            <select name="openTooth" className="short" id="openToothInput">
                                 <option value=""></option>
                             </select>
                         </div>
                     </div>
                     <div className="Description">
-                        <label htmlFor="Desc">Описание</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Описание"></textarea>
+                        <label htmlFor="openDescription">Описание</label>
+                        <textarea id="openDescription" name="openDescription" cols="30" rows="10" placeholder="Описание"></textarea>
                     </div>
                     <div className="buttons">
-                        <button className="ChangeScheduleRecordbutton">Изменить запись</button>
+                        <Link to = "/medicalCard/card/change-record"><button className="ChangeScheduleRecordbutton">Изменить запись</button></Link>
                         <button className="ChangeScheduleRecordbutton">Печать</button>
                         <button className="ChangeScheduleRecordbutton">Удалить запись</button>
                     </div>
@@ -41,3 +40,5 @@ const OpenTothRecordPage = () => {
         </main>
     );
 };
+
+export default OpenTothRecordPage;

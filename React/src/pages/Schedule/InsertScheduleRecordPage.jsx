@@ -9,12 +9,12 @@ const InsertScheduleRecordPage = () => {
             <form className="InsertScheduleRecord-form">
                 <div className="form-container">
                     <div className="labelsinputs-container">
-                        <div className="labels">
+                        <div className="InsertScheduleRecord-labels">
                             <label htmlFor="patientName">Пациент</label>
                             <label htmlFor="doctor">Врач</label>
                             <label htmlFor="datetime-local">Дата</label>
                         </div>
-                        <div className="inputs">
+                        <div className="InsertScheduleRecord-inputs">
                             <input type="text" id="patientName" name="patientName" placeholder="Пациент"/>
                             <select name="doctors" id="">
                                 <option value=""></option>
