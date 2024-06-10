@@ -2,6 +2,10 @@ import '../../assets/styles/global.css';
 import '../../assets/styles/MedicalCardStyles/StyleOpenTothRecord.css';
 import { Link } from 'react-router-dom';
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const OpenTothRecordPage = () => {
     return(
         <main>
@@ -31,8 +35,8 @@ const OpenTothRecordPage = () => {
                         <textarea id="openDescription" name="openDescription" cols="30" rows="10" placeholder="Описание"></textarea>
                     </div>
                     <div className="buttons">
-                        <Link to = "/medicalCard/card/change-record"><button className="ChangeScheduleRecordbutton">Изменить запись</button></Link>
-                        <button className="ChangeScheduleRecordbutton">Печать</button>
+                        <Link to = "/medicalCard/card/change-record"><button className="ChangeScheduleRecordbutton" onClick={scrollToTop}>Изменить запись</button></Link>
+                        <button className="ChangeScheduleRecordbutton" onClick={scrollToTop}>Печать</button>
                         <button className="ChangeScheduleRecordbutton">Удалить запись</button>
                     </div>
                 </div>

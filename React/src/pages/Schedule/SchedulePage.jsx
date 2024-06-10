@@ -3,13 +3,17 @@ import '../../assets/styles/ScheduleStyles/StyleSchedule.css'
 import ScheduleForm from '../../components/ScheduleComponents/ScheduleForm';
 import SearchForm from '../../components/ScheduleComponents/SearchSchedule';
 import { Link } from 'react-router-dom'; 
+import ScheduleIcon from "../../assets/images/Schedule.png"
 
 
 const SchedulePage = () => {
     return (
         <div className="container">
         <main>
-            <h1>График работы</h1>
+            <div className="headername">
+                <img src={ScheduleIcon} className="PartitionIcon" alt=""/>
+                <h1>Карточка Пациента</h1>
+            </div>
             <SearchForm />
             <ScheduleForm />
             <div class="ScheduleButtons">

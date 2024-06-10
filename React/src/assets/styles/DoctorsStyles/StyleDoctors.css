@@ -6,28 +6,29 @@ h1{
 .Search{
     text-align: center;
     display: flex;
-    margin: 0 auto;
     height: 37px;
     width: 250px;
     border: 1px solid black;
     border-radius: 12px;
-    margin-bottom: 44px;
 }
 .doctor-list{
     width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
 }
 .doctor-form{
     width: 100%;
+    max-width: 1147px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     gap: 20px;
-    height: auto;
+    height: 470px;
     background-color: rgb(217, 217, 217);
     border-radius: 15px;
     padding-top: 30px;
-    overflow: scroll;
-    padding-bottom: 20px;
+    overflow-y: auto;
 }
 .doctor-buttons{
     display: flex;
@@ -39,14 +40,16 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 7px;
+    gap: 10px;
     padding: 0 55px;
+    padding-bottom: 30px; 
 }
 .doctor-item input{
-    width: 500px;
+    width: 600px;
     height: 27px;
     background-color: white;
     border-radius: 10px;
+    box-sizing: border-box;
 }
 .doctor-button{
     width: 170px;
@@ -64,4 +67,15 @@ h1{
 }
 .dark .doctor-item input{
     background-color: rgb(217, 217, 217);
+}
+.dark .doctor-form{
+    background-color: gray;
+}
+.dark .search{
+    background-color: black;
+    border: 1px solid rgb(217, 217, 217);
+    color: white;
+}
+.dark .search::placeholder{
+    color: rgb(217, 217, 217);
 }

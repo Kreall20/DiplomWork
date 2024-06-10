@@ -15,13 +15,6 @@ h1{
     margin: 0 auto;
     gap: 20px;
 }
-/* .form-container{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-} */
 .labels{
     display: flex;
     height: 47px;
@@ -43,14 +36,11 @@ h1{
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input:not(.short){
-    width: 450px;
-}
 input{
     width: 450px;
     height: 47px;
     border-radius: 10px;
-    border: 1px solid black; /* Заменяем border-color на border */
+    border: 1px solid black; 
     padding-left: 10px;
 }
 .light input{

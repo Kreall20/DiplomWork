@@ -11,12 +11,10 @@ main {
   .Search {
     text-align: center;
     display: flex;
-    margin: 0 auto;
     height: 37px;
     width: 250px;
     border: 1px solid black;
     border-radius: 12px;
-    margin-bottom: 44px;
   }
   
   .ReportForm {
@@ -51,7 +49,9 @@ main {
     padding-left: 8px;
     border-radius: 10px;
   }
-
+  .ReportItem .longer{
+    width: 200px;
+  }
   .ReportItem input[type="checkbox"] {
 
     transform: scale(0.8);
@@ -66,7 +66,7 @@ main {
     width: 400px;
   }
   .ReportItem input[type="checkbox"]:checked {
-    background-color: rgb(7, 215, 230);/* Зеленый цвет */
+    background-color: rgb(7, 215, 230);
   }
   
   .ReportItem.payment input {

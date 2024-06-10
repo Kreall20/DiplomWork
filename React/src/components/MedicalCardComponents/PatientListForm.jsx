@@ -1,6 +1,10 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleCreateCard.css'
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const MedicalCardsForm = () => {
     return(
         <>
@@ -12,8 +16,8 @@ const MedicalCardsForm = () => {
                 </div>
                 </form>
             </div>
-            <div className="CardsButtons">
-                <button className="CardsButton">Добавить карточку</button>
+            <div className="CardsButtonsCreateCard">
+                <button className="CardsButtonCreateCard" onClick={scrollToTop}>Добавить карточку</button>
             </div>
         </>
     );

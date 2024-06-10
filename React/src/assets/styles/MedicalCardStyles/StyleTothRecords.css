@@ -11,12 +11,10 @@ h1{
 .Search{
     text-align: center;
     display: flex;
-    margin: 0 auto;
     height: 37px;
     width: 250px;
     border: 1px solid black;
     border-radius: 12px;
-    margin-bottom: 44px;
 }
 
 .TothRecordsForm{

@@ -15,13 +15,31 @@ const DoctorsForm = () => {
             <div className="doctor-list">
                 <form className="doctor-form" action="">
                     <div className="doctor-item">
-                        {/* <label htmlFor="doctor_name">Врачи</label> */}
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        {/* <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
                         <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
                         <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
                         <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
                         <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
                         <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
                         <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" />
+                        <input className="doctor-input" type="text" id="doctor_name" name="doctor_name" /> */}
                     </div>
                 </form>
             </div>

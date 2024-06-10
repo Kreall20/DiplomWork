@@ -5,10 +5,14 @@ const SearchForm = () => {
     return (
       <form className="Searchform" action="">
         <label htmlFor="searchField"></label>
-        <div className="serchblock">
+        <div className="searchblock">
+          <input className = "searchdate" type="datetime-local" />
+          <select className = "searchselect" name="doctors" id="">
+                                <option value=""></option>
+          </select>
           <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
+          <button>Поиск</button>
         </div>
-        {/* нужно попробовать добавить лупу */}
       </form>
     );
   };

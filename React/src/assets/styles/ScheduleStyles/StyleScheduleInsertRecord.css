@@ -41,9 +41,6 @@ h1{
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-input:not(.short){
-    width: 450px;
-}
 .short{
     width: 250px;
 }

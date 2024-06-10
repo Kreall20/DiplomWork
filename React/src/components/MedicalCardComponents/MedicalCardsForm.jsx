@@ -2,6 +2,10 @@ import '../../assets/styles/global.css';
 import '../../assets/styles/MedicalCardStyles/StyleCards.css';
 import { Link } from 'react-router-dom'; 
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const MedicalCardsForm = () => {
     return(
         <>
@@ -14,10 +18,10 @@ const MedicalCardsForm = () => {
                 </form>
             </div>
             <div class="CardsButtons">
-                <Link to="/medicalCards/add-card"><button class="CardsButton">Добавить карточку</button></Link>
-                <Link to="/medicalCards/open-card"><button class="CardsButton">Открыть карточку</button></Link>
-                <Link to="/medicalCards/print"><button class="CardsButton">Печать</button></Link>
-                <Link to="/medicalCards/delete-card"><button class="CardsButton">Удалить карточку</button></Link>
+                <Link to="/medicalCards/add-card"><button class="CardsButton" onClick={scrollToTop}>Добавить карточку</button></Link>
+                <Link to="/medicalCards/open-card"><button class="CardsButton" onClick={scrollToTop}>Открыть карточку</button></Link>
+                <Link to="/medicalCards/print"><button class="CardsButton" onClick={scrollToTop}>Печать</button></Link>
+                <Link to="/medicalCards/delete-card"><button class="CardsButton" onClick={scrollToTop}>Удалить карточку</button></Link>
             </div>
         </>
     );

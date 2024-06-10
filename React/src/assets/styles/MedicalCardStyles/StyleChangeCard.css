@@ -48,35 +48,25 @@ h1 {
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-
-input:not(.short) {
-    width: 450px;
-}
-
 .short {
     width: 250px;
 }
-
 #doctorSelect {
     width: 460px;
 }
-
 #TothInput {
     width: 200px;
 }
-
 input::placeholder {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-
 .change-card-buttons {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-
 .change-card-button {
     margin-top: 43px;
     font-size: 15px;
@@ -89,7 +79,6 @@ input::placeholder {
     color: black;
     padding: 14px 13px;
 }
-
 .change-card-button:active {
     color: rgb(7, 215, 230);
     background-color: black;

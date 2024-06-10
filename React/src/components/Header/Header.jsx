@@ -49,7 +49,6 @@ const Header = ({ userType }) => {
                         </Link>
                         )
                     }
-                {/* <button className="Signinbtn">Sign in</button> */}
                 <Link to="/login">
                     <button className="Logoutbtn">Log out</button>
                     </Link>

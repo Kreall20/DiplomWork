@@ -9,12 +9,14 @@ h1{
 .Search{
     text-align: center;
     display: flex;
-    margin: 0 auto;
     height: 37px;
     width: 250px;
     border: 1px solid 808080;
     border-radius: 12px;
-    margin-bottom: 44px;
+}
+
+.searchdate{
+    width: 200px;
 }
 .Scheduleform{
     max-width: 100%;
@@ -26,9 +28,9 @@ h1{
     padding: 27px 15px;
     background-color: rgb(217, 217, 217);
     border-radius: 15px;
+    overflow-y: scroll;
 }
 .ScheduleButtons{
-    /* max-width: 1147px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -52,11 +54,7 @@ h1{
     transform: scale(0.8);
     width: 150px;
 }
-/* .ScheduleItem input[type="checkbox"]:checked {
-    background-color: rgb(7, 215, 230);/* Зеленый цвет 
-} */
-
-.longer{
+.ScheduleItem.longer{
     width: 40%;
 }
 .ScheduleButtons{
@@ -65,7 +63,6 @@ h1{
 .FormButtons{
     width: auto;
     border: none;
-    /* margin-top: 47px; */
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;
@@ -78,23 +75,57 @@ h1{
 .FormButton a{
     padding: 20px 25px;
 }
-/* .ScheduleItems{
-    display: flex;
-    gap: 49px;
-    border: none;
-    border-radius: 15px;
-    height: 30px;
-}
-#patient_name, #doctor_name{
-    width: 301px;
-}
-#appointment_date{
-    width: 247px;
-} */
 /* Dark theme */
 .dark .Scheduleform{
     background-color: gray;
 }
 .dark .ScheduleItem input{
     background-color: rgb(217, 217, 217);
+}
+
+.dark .searchblock select{
+    background-color: black;
+    color: white;
+}
+.searchblock {
+    position: relative;
+    display: flex;
+}
+
+.dark .searchblock input[type="datetime-local"] {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding-right: 30px; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none; 
+    position: relative; 
+}
+
+.dark .searchblock input[type="datetime-local"]::before {
+    content: "\1F4C5"; 
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+.light .searchblock input[type="datetime-local"] {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.light .searchblock::before {
+    content: "\1F4C5";
+    font-size: 18px;
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
 }

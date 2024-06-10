@@ -3,6 +3,10 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/Иконка.svg';
 
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const Footer = ({userType}) => {
     return (
         <footer>
@@ -14,18 +18,19 @@ const Footer = ({userType}) => {
                     </div> 
                     <ul className="ul-buttons">
                         <li><Link to="/" className='links'>Главная</Link></li>
-                        <li><Link to="/schedule" className='links'>График работы</Link></li>
-                        <li><Link to="/medicalCards" className='links'>Карточки пациентов</Link></li>
+                        <li><Link to="/schedule" className='links' onClick={scrollToTop}>График работы</Link></li>
+                        <li><Link to="/medicalCards" className='links' onClick={scrollToTop}>Карточки пациентов</Link></li>
                         {userType === "admin" && (
                             <>
-                                <li><Link to="/doctors" className='links'>Врачи</Link></li>
-                                <li><Link to="/reports" className='links'>Отчеты</Link></li>
+                                <li><Link to="/doctors" className='links' onClick={scrollToTop}>Врачи</Link></li>
+                                <li><Link to="/reports" className='links' onClick={scrollToTop}>Отчеты</Link></li>
                             </>
                             )}
                     </ul> 
                     <div className="buttons">
-                        <button className="Loginbtn">Log in</button>
-                        <button className="Signinbtn">Sign in</button>
+                    <Link to="/login">
+                    <button className="Login" onClick={scrollToTop}>Log in</button>
+                    </Link>
                     </div>
                 </div>
             </div>

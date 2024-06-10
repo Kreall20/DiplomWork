@@ -50,6 +50,7 @@ function App() {
               <Route path="/medicalCards/open-card" element={<TothCardPage />} />
               <Route path="/medicalCards/card/add-record" element={<InsertCardRecordPage />} />
               <Route path="/medicalCards/card/open-records" element={<TothRecordsPage />} />
+              <Route path="/medicalCards/card/open-record" element={<ChangeCardPage />} />
               <Route path="/medicalCard/card/change-record" element={<ChangeCardPage />} />
 
               <Route path="/doctors" element={<DoctorsPage />} />

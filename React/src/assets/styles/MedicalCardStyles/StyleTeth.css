@@ -1,17 +1,6 @@
 main{
     margin: 0 auto;
 }
-
-.headername{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.headername img{
-    width: 70px;
-}
-
 h1{
     text-align: center;
     margin-top: 50px;
@@ -21,12 +10,10 @@ h1{
 .Search{
     text-align: center;
     display: flex;
-    margin: 0 auto;
     height: 37px;
     width: 250px;
     border: 1px solid black;
     border-radius: 12px;
-    margin-bottom: 44px;
 }
 
 .TethList{

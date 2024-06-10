@@ -5,7 +5,7 @@ const ChangeCardPage = () => {
     return (
       <div className="container">
         <main>
-          <h1>Изменить запись</h1>
+          <h1>Запись</h1>
           <form className="change-card-form">
             <div className="change-card-form-container">
               <div className="change-card-labels-inputs-container">

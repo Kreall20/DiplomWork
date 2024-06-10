@@ -18,10 +18,12 @@ h1{
     background-color: rgb(217, 217, 217);
     padding: 27px;
     border-radius: 15px;
+    overflow-y: scroll;
 }
-.CardsButtons{
+.CardsButtons{    
     max-width: 1147px;
     margin: 0 auto;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -34,7 +36,7 @@ h1{
     padding: 0 55px;
 }
 .CardItem input{
-    width: 500px;
+    width: 600px;
     height: 27px;
     border-radius: 10px;
 }
@@ -42,7 +44,6 @@ h1{
     width: 150px;
     height: 60px;
     border: none;
-    /* margin-top: 47px; */
     font-size: 15px;
     font-weight: 500;
     line-height: 18px;

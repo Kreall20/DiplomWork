@@ -1,10 +1,14 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/AccountStyles/accountstyle.css'
+import Profile from "../../assets/images/Profile.png";
 
 const AccountPage = () => {
     return(
         <div className="container">
-            <h1>Вход</h1>
+            <div className="headername">
+                <img src={Profile} className="ProfileIcon" alt=""/>
+                <h1>Вход</h1>
+            </div>
         <form className="login-form">
             <div className="form-container">
                 <div className="form-group first">

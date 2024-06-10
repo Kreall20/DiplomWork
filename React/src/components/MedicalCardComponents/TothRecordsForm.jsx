@@ -1,5 +1,10 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleTothRecords.css'
+import { Link } from 'react-router-dom';
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 const TothRecordsForm = () => {
     return(
@@ -17,8 +22,8 @@ const TothRecordsForm = () => {
             </form>
             </div>
             <div className="RecordsButtons">
-                <button className="RecordsButton">Добавить запись</button>
-                <button className="RecordsButton">Открыть запись</button>
+                <Link to="/medicalCards/card/add-record"><button className="TothButton" onClick={scrollToTop}>Добавить запись</button></Link>
+                <Link to="/medicalCards/card/open-record"><button className="TothButton" onClick={scrollToTop}>Открыть запись</button></Link>
                 <button className="RecordsButton">Удалить запись</button>
             </div>
         </>

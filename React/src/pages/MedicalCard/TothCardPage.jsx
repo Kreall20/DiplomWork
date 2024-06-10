@@ -1,19 +1,24 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/MedicalCardStyles/StyleTeth.css'
-import Toth from '../../assets/images/Toth.svg'
+import CardItems from '../../assets/images/CardItems.png'
 import Teth from '../../assets/images/Teth.svg'
 import { Link } from 'react-router-dom'
+
+const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 
 const ToothCardPage = () => {
     return(
         <main>
             <div className="headername">
-                <img src={Toth} className="Toth" alt=""/>
+                <img src={CardItems} className="CardItemsIcon" alt=""/>
                 <h1>Карточка Пациента</h1>
             </div>
             <form className="Searchform" action="">
                 <label htmlFor="searchPatient"></label>
-                <div className="serchblock">
+                <div className="searchblock">
                     <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
                 </div>
             </form>
@@ -32,8 +37,8 @@ const ToothCardPage = () => {
                 </form>
             </div>
             <div className="TothButtons">
-                <Link to="/medicalCards/card/add-record"><button className="TothButton">Добавить запись</button></Link>
-                <Link to="/medicalCards/card/open-records"><button className="TothButton">Открыть записи</button></Link>
+                <Link to="/medicalCards/card/add-record"><button className="TothButton" onClick={scrollToTop}>Добавить запись</button></Link>
+                <Link to="/medicalCards/card/open-records"><button className="TothButton" onClick={scrollToTop}>Открыть записи</button></Link>
                 <Link to="/medicalCards/print"><button className="TothButton">Печать</button></Link>
                 <Link to="/medicalCards/delete-card"><button className="TothButton">Удалить</button></Link>
             </div>

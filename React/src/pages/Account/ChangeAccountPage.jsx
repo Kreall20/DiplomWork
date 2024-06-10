@@ -1,11 +1,15 @@
 import '../../assets/styles/global.css'
 import '../../assets/styles/AccountStyles/changeaccount.css'
+import Profile from "../../assets/images/Profile.png";
 
 
 const ChangeAccountPage = () => {
     return(
         <div class="container">
-        <h1>Изменить аккаунт</h1>
+            <div className="headername">
+                <img src={Profile} className="ProfileIcon" alt=""/>
+                <h1>Изменить аккаунт</h1>
+            </div>
         <form class="changeaccount-form">
             <div class="form-container">
             <div className="form-group">
