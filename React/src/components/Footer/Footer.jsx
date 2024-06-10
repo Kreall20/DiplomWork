@@ -2,6 +2,10 @@ import '../../assets/styles/global.css';
 import './Footer.css'; 
 import { Link } from 'react-router-dom';
 import logo from '../../assets/images/Иконка.svg';
+import youtubeicon from "../../assets/images/youtube.png"
+import telegramicon from "../../assets/images/telegram.png"
+import instagramicon from "../../assets/images/instagram.png"
+
 
 const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -29,7 +33,7 @@ const Footer = ({userType}) => {
                     </ul> 
                     <div className="buttons">
                     <Link to="/login">
-                    <button className="Login" onClick={scrollToTop}>Log in</button>
+                    <button className="Loginbtn" onClick={scrollToTop}>Log in</button>
                     </Link>
                     </div>
                 </div>
@@ -40,9 +44,15 @@ const Footer = ({userType}) => {
                     <span>@2024 Мы любим наших пациентов</span>
                     <div className="social-networks">
                         <span>Follow us: </span>
-                        <div className="soc_network"></div>
-                        <div className="soc_network"></div>
-                        <div className="soc_network"></div>
+                        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                            <img src={youtubeicon} alt="" className="soc_network" />
+                        </a>
+                        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+                            <img src={telegramicon} alt="" className="soc_network" />
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                            <img src={instagramicon} alt="" className="soc_network" />
+                        </a>
                     </div>
                 </div>
             </div>

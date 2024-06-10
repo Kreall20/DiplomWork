@@ -83,6 +83,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+button{
+    cursor: pointer;
+}
 .searchblock button{
     border-radius: 10px;
     border: none;

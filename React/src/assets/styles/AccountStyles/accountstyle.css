@@ -95,3 +95,9 @@ input::placeholder {
 .dark .form-group input{
     color:white;
 }
+.dark .Loginbtn{
+    color: rgb(7, 215, 230);
+    background-color: black;
+    border-radius: 5px;
+    border: 2px solid rgb(7, 215, 230);
+}
