@@ -8,7 +8,7 @@ const SearchForm = () => {
         <div className="searchblock">
           <input className = "searchdate" type="datetime-local" />
           <select className = "searchselect" name="doctors" id="">
-                                <option value=""></option>
+              <option value="" disabled selected>Врач</option>
           </select>
           <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
           <button>Поиск</button>
