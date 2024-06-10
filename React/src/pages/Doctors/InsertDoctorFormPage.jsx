@@ -13,11 +13,13 @@ const InsertDoctorFormPage = () => {
                             <label htmlFor="fio">ФИО</label>
                             <label htmlFor="login">Логин</label>
                             <label htmlFor="password">Пароль</label>
+                            <label htmlFor="Phone">Телефон</label>
                         </div>
                         <div className="insert-doctor-inputs">
                             <input type="text" id="fio" className="fio" name="fio" placeholder="Фио"/>
                             <input type="text" id="login" name="login" placeholder="Логин"/>
                             <input type="password" id="password" name="password" placeholder="Пароль"/>
+                            <input type="text" id='phone' name='phone' placeholder='Номер телефона' />
                         </div>
                     </div>
                     <button className="insert-doctor-button">Добавить врача</button>

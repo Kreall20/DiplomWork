@@ -70,9 +70,3 @@ function App() {
 }
 
 export default App
-
-
-
-              {/* <Route path="openDoctor" element={<OpenDoctorFormPage />} />
-              <Route path="schedule" element={<SchedulePage />} /> */}
-              {/* <Route path="insertDoctor" element={<InsertDoctorFormPage/>} /> */}

@@ -6,7 +6,7 @@ const SearchPatientMedicalCard = () => {
         <form className="search-form" action="">
             <label htmlFor="searchPatient"></label>
             <div className="searchblock">
-                <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
+                <input className="search" id="searchPatient" type="text" placeholder="Поиск" />
             </div>
         </form>
     );
