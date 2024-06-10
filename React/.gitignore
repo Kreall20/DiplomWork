@@ -9,6 +9,10 @@ lerna-debug.log*
 
 node_modules
 dist
+.vs
+DesignTimeBuild
+FileContentIndex
+v17
 dist-ssr
 *.local
 
@@ -21,4 +25,4 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
+*.sw

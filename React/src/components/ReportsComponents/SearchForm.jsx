@@ -4,8 +4,17 @@ import '../../assets/styles/ReportsStyles/StyleReports.css'
 const SearchForm = () => {
     return (
       <form className="Searchform" action="">
-        <label htmlFor="searchField"></label>
         <div className="searchblock">
+        <label htmlFor="sortdesasc" className='label'>Сортировать по</label>
+        <select name="sortdesasc" id="">
+            <option value="ascending">возрастанию</option>
+            <option value="descending">убыванию</option>
+          </select>
+        <select className = "searchselect" name="fieldsort" id="">
+              <option value="patient">Имени Пациента</option>
+              <option value="doctor">Имени Врача</option>
+              <option value="date">Даты</option>
+          </select>
           <input className = "searchdate" type="datetime-local" />
           <select className = "searchselect" name="doctors" id="">
               <option value="" disabled selected>Врач</option>
