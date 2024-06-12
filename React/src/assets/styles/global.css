@@ -132,6 +132,13 @@ button{
     line-height: 18px;
     letter-spacing: -1.5%;
 }
+button{
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+}
 .links{
     color: white;
 }

@@ -40,4 +40,6 @@ public partial class AspNetUser
     public virtual ICollection<AspNetUserLogin> AspNetUserLogins { get; set; } = new List<AspNetUserLogin>();
 
     public virtual ICollection<AspNetUserToken> AspNetUserTokens { get; set; } = new List<AspNetUserToken>();
+
+    public virtual ICollection<Doctor> Doctors { get; set; } = new List<Doctor>();
 }

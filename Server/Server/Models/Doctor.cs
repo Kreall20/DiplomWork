@@ -11,7 +11,11 @@ public partial class Doctor
 
     public string LastName { get; set; } = null!;
 
-    public string PhoneNumber { get; set; } = null!;
+    public string? PhoneNumber { get; set; }
+
+    public int UserId { get; set; }
 
     public virtual ICollection<ScheduleRecord> ScheduleRecords { get; set; } = new List<ScheduleRecord>();
+
+    public virtual AspNetUser User { get; set; } = null!;
 }

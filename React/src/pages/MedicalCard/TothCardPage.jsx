@@ -1,40 +1,42 @@
-import '../../assets/styles/global.css'
-import '../../assets/styles/MedicalCardStyles/StyleTeth.css'
-import CardItems from '../../assets/images/CardItems.png'
-import Teth from '../../assets/images/Teth.svg'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import '../../assets/styles/global.css';
+import '../../assets/styles/MedicalCardStyles/StyleTeth.css';
+import ToothImage from '../../assets/images/tooth.png'; // замените на путь к вашему изображению зуба
+import { Link } from 'react-router-dom';
 
 const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
+const handleToothClick = (toothNumber) => {
+    alert(`Зуб ${toothNumber} выбран`);
+};
 
 const ToothCardPage = () => {
-    return(
+    const createToothButtons = () => {
+        const toothOrder = [8, 7, 6, 5, 4, 3, 2, 1, 1, 2, 3, 4, 5, 6, 7, 8];
+        return toothOrder.map((number, index) => (
+            <button className="ToothBlock" onClick={() => handleToothClick(number)} key={index}>
+                <img src={ToothImage} alt={`Зуб ${number}`} className="ToothImage" />
+                <span className="ToothNumber">{number}</span>
+            </button>
+        ));
+    };
+
+    return (
         <main>
             <div className="headername">
-                <img src={CardItems} className="CardItemsIcon" alt=""/>
                 <h1>Карточка Пациента</h1>
             </div>
-            <form className="Searchform" action="">
+            {/* <form className="Searchform" action="">
                 <label htmlFor="searchPatient"></label>
                 <div className="searchblock">
                     <input className="Search" id="searchPatient" type="text" placeholder="Поиск" />
                 </div>
-            </form>
+            </form> */}
             <div className="TethList">
-                <div className="pictureTeth">
-                    <img src= {Teth} className="reverse" alt=""/>
-                    <img src= {Teth} alt=""/>
-                </div>
-                <form className="TethForm" action="">
-                    <div className="TethFormItem">
-                        <label htmlFor="Teth">Зуб</label>
-                        <select name="Teth" id="">
-                            <option value=""></option>
-                        </select>
-                    </div>
-                </form>
+                <div className="ToothRow">{createToothButtons()}</div>
+                <div className="ToothRow">{createToothButtons()}</div>
             </div>
             <div className="TothButtons">
                 <Link to="/medicalCards/card/add-record"><button className="TothButton" onClick={scrollToTop}>Добавить запись</button></Link>

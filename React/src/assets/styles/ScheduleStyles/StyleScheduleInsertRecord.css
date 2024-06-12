@@ -1,26 +1,59 @@
-h1{
+h1 {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 80px;
 }
-.InsertScheduleRecord-form{
+
+.InsertScheduleRecord-form {
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
 }
-.form-container{
+
+.form-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     gap: 20px;
 }
-.labelsinputs-container{
+
+.labelsinputs-container {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
-.InsertScheduleRecord-labels{
+
+.datelist-container {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.datelist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.date-field {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.date-field input{
+    background-color: rgb(217, 217, 217);
+}
+.datelist button {
+    height: 47px;
+    color: black;
+    background-color: rgb(7, 215, 230);
+    border-radius: 5px;
+    border: 2px solid rgb(7, 215, 230);
+}
+
+.InsertScheduleRecord-labels {
     display: flex;
     height: 47px;
     flex-direction: column;
@@ -28,32 +61,38 @@ h1{
     gap: 89px;
     margin-right: 40px;
 }
-.InsertScheduleRecord-inputs{
+
+.InsertScheduleRecord-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 59px;
 }
-.InsertScheduleRecord-inputs>input, .InsertScheduleRecord-inputs>select{
+
+.InsertScheduleRecord-inputs > input,
+.InsertScheduleRecord-inputs > select {
     height: 47px;
     border-radius: 10px;
-    border: 1px solid gray; 
+    border: 1px solid gray;
     padding-left: 10px;
     background: rgb(217, 217, 217);
 }
-.short{
+
+.short {
     width: 250px;
 }
+
 .custom-select {
     display: flex;
     border-radius: 10px;
 }
+
 .custom-select select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: transparent;
-    padding-right: 20px; 
+    padding-right: 20px;
     width: 460px;
     height: 47px;
     border: 1px solid gray;
@@ -62,20 +101,18 @@ h1{
     background: rgb(217, 217, 217);
     padding-left: 10px;
 }
-.custom-select #TothInput{
+
+.custom-select #TothInput {
     width: 200px;
 }
+
 input::placeholder {
     font-size: 15px;
     font-weight: 500;
     color: black;
 }
-input::placeholder {
-    font-size: 15px;
-    font-weight: 500;
-    color: black;
-}
-.InserRecordButton{
+
+.InserRecordButton {
     width: 200px;
     margin-top: 43px;
     font-size: 15px;
@@ -88,7 +125,8 @@ input::placeholder {
     color: black;
     padding: 14px 13px;
 }
-.InserRecordButton:active{
+
+.InserRecordButton:active {
     color: rgb(7, 215, 230);
     background-color: black;
     border-radius: 5px;

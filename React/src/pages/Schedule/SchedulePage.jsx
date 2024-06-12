@@ -12,7 +12,7 @@ const SchedulePage = () => {
         <main>
             <div className="headername">
                 <img src={ScheduleIcon} className="PartitionIcon" alt=""/>
-                <h1>Карточка Пациента</h1>
+                <h1>График работы</h1>
             </div>
             <SearchForm />
             <ScheduleForm />
