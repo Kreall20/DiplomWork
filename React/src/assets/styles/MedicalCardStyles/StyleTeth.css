@@ -21,7 +21,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 }
 
 .ToothRow {
@@ -81,4 +81,68 @@ h1 {
     padding: 14px 13px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+}
+
+.top-row-1{
+    transform: translateY(-25px);
+}
+
+.top-row-2{
+    transform: translateY(-20px);
+}
+
+.top-row-3{
+    transform: translateY(-15px);
+}
+
+.top-row-4{
+    transform: translateY(-10px);
+}
+
+.top-row-5{
+    transform: translateY(0);
+}
+
+.top-row-6{
+    transform: translateY(10px);
+}
+
+.top-row-7{
+    transform: translateY(20px);
+}
+
+.top-row-8{
+    transform: translateY(25px);
+}
+
+.bottom-row-1 {
+    transform: translateY(20px);
+}
+
+.bottom-row-2 {
+    transform: translateY(15px);
+}
+
+.bottom-row-3 {
+    transform: translateY(10px);
+}
+
+.bottom-row-4 {
+    transform: translateY(0);
+}
+
+.bottom-row-5 {
+    transform: translateY(-10px);
+}
+
+.bottom-row-6 {
+    transform: translateY(-15px);
+}
+
+.bottom-row-7 {
+    transform: translateY(-20px);
+}
+
+.bottom-row-8 {
+    transform: translateY(-25px);
 }
