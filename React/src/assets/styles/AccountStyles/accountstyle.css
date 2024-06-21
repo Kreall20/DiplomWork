@@ -30,7 +30,7 @@ h1{
 .form-group .second{
     margin-bottom: 40px;
 }
-.form-container input {
+.login-form .form-container input {
     /* width: 100%; */
     height: 47px;
     border-radius: 10px;

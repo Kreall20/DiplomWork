@@ -15,5 +15,7 @@ public partial class ScheduleRecord
 
     public virtual Doctor? Doctor { get; set; }
 
+    public virtual ICollection<PastScheduleRecord> PastScheduleRecords { get; set; } = new List<PastScheduleRecord>();
+
     public virtual Patient? Patient { get; set; }
 }

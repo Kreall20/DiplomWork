@@ -22,6 +22,9 @@
 body{
     margin: 0;
 }
+input{
+    text-align: center;
+}
 .headername{
     display: flex;
     justify-content: center;

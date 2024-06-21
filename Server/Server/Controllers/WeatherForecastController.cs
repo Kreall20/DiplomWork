@@ -29,10 +29,5 @@ namespace Server.Controllers
             })
             .ToArray();
         }
-        /*[HttpGet(Name = "Date")]
-        public string Date()
-        {
-            return DateTime.Now.ToString();
-        }*/
     }
 }

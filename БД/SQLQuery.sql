@@ -1,5 +1,6 @@
 --Все записи
-CREATE PROCEDURE GetAllScheduleRecords
+USE DentClinicDB;
+CREATE OR ALTER PROCEDURE GetAllScheduleRecords
 AS
 BEGIN
     SELECT SR.appointment_date,P.first_name+P.last_name,D.first_name+D.last_name
@@ -10,7 +11,7 @@ END;
 
 GO
 --Все записи
-CREATE PROCEDURE GetAllScheduleRecordsToday
+CREATE OR ALTER PROCEDURE GetAllScheduleRecordsToday
 AS
 DECLARE @Today DATE = CAST(GETDATE() AS DATE);
 BEGIN
@@ -22,7 +23,7 @@ BEGIN
 END;
 
 GO
-CREATE PROCEDURE GetScheduleRecords
+CREATE OR ALTER PROCEDURE GetScheduleRecords
     @AppointmentDate DATETIME = NULL,
     @PatientFirstName NVARCHAR(50) = NULL,
     @DoctorFirstName NVARCHAR(50) = NULL,
@@ -60,7 +61,7 @@ END;
 
 --Записи врача
 GO
-CREATE PROCEDURE GetScheduleRecordsByDoctorId @DoctorId INT
+CREATE OR ALTER PROCEDURE GetScheduleRecordsByDoctorId @DoctorId INT
 AS
 BEGIN
     SELECT SR.appointment_date,P.first_name+P.last_name,D.first_name+D.last_name
@@ -71,7 +72,7 @@ BEGIN
 END;
 --Врачи
 GO
-CREATE PROCEDURE GetAllDoctors
+CREATE OR ALTER PROCEDURE GetAllDoctors
 AS
 BEGIN
     SELECT * 
@@ -79,7 +80,7 @@ BEGIN
 END;
 --Врач
 GO
-CREATE PROCEDURE GetDoctorbyId @DoctorId INT
+CREATE OR ALTER PROCEDURE GetDoctorbyId @DoctorId INT
 AS
 BEGIN
     SELECT * 
@@ -88,7 +89,7 @@ BEGIN
 END;
 
 GO
-CREATE PROCEDURE GetDoctorbyName @DoctorName NVARCHAR(50)
+CREATE OR ALTER PROCEDURE GetDoctorbyName @DoctorName NVARCHAR(50)
 AS
 BEGIN
     SELECT * 
@@ -98,7 +99,7 @@ END;
 
 --Пациент
 GO
-CREATE PROCEDURE GetPatientbyId @PatientId INT
+CREATE OR ALTER PROCEDURE GetPatientbyId @PatientId INT
 AS
 BEGIN
     SELECT * 
@@ -107,7 +108,7 @@ BEGIN
 END;
 
 GO
-CREATE PROCEDURE GetPatientbyName @PatientName NVARCHAR(50)
+CREATE OR ALTER PROCEDURE GetPatientbyName @PatientName NVARCHAR(50)
 AS
 BEGIN
     SELECT * 
@@ -117,7 +118,7 @@ END;
 
 --Пациенты
 GO
-CREATE PROCEDURE GetAllPatients
+CREATE OR ALTER PROCEDURE GetAllPatients
 AS
 BEGIN
     SELECT * 
@@ -127,7 +128,7 @@ END;
 
 GO
 
-CREATE PROCEDURE GetAllMedicalRecordsById 
+CREATE OR ALTER PROCEDURE GetAllMedicalRecordsById 
     @PatientId INT
 AS
 BEGIN
@@ -152,7 +153,7 @@ BEGIN
 END;
 GO
 
-CREATE TRIGGER trg_CheckAppointmentTime
+CREATE OR ALTER TRIGGER trg_CheckAppointmentTime
 ON ScheduleRecords
 INSTEAD OF INSERT
 AS
@@ -205,7 +206,7 @@ BEGIN
 END;
 
 GO
-CREATE PROCEDURE AddScheduleRecord
+CREATE OR ALTER PROCEDURE AddScheduleRecord
     @AppointmentDate DATETIME,
     @PatientId INT,
     @DoctorId INT
@@ -218,7 +219,7 @@ END;
 GO
 
 GO
-CREATE PROCEDURE GetAllPastScheduleRecords
+CREATE OR ALTER PROCEDURE GetAllPastScheduleRecords
 AS
 BEGIN
     SELECT SR.appointment_date,P.first_name+P.last_name,D.first_name+D.last_name,PSR.PaymentAmount
@@ -242,7 +243,7 @@ BEGIN
 END;
 
 GO
-CREATE PROCEDURE GetPastScheduleRecords
+CREATE OR ALTER PROCEDURE GetPastScheduleRecords
     @AppointmentDate DATETIME = NULL,
     @PatientFirstName NVARCHAR(50) = NULL,
     @DoctorFirstName NVARCHAR(50) = NULL,
@@ -281,7 +282,7 @@ BEGIN
 END;
 GO
 
-CREATE PROCEDURE GetPastScheduleRecordsByDateRange
+CREATE OR ALTER PROCEDURE GetPastScheduleRecordsByDateRange
     @StartDate DATE = NULL,
     @EndDate DATE = NULL,
     @TotalPaymentAmount DECIMAL(18, 2) OUTPUT

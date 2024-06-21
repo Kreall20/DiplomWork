@@ -16,6 +16,4 @@ public partial class Doctor
     public int UserId { get; set; }
 
     public virtual ICollection<ScheduleRecord> ScheduleRecords { get; set; } = new List<ScheduleRecord>();
-
-    public virtual AspNetUser User { get; set; } = null!;
 }

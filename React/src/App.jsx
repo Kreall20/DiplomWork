@@ -27,6 +27,7 @@ import DoctorsPage from './pages/Doctors/DoctorsPage.jsx';
 import AdminPage from './pages/Account/AdminPage.jsx';
 import AccountPage from './pages/Account/AccountPage.jsx';
 import InsertDoctorFormPage from './pages/Doctors/InsertDoctorFormPage.jsx';
+import ChangeDoctorPage from './pages/Doctors/ChangeDoctorPage.jsx';
 
 function App() {
   const usertype = 'admin';
@@ -43,19 +44,21 @@ function App() {
 
               <Route path="/schedule" element={<SchedulePage />} />
               <Route path="/schedule/add" element={<InsertScheduleRecordPage />} />
-              <Route path="/schedule/open" element={<OpenScheduleRecordPage />} />
+              <Route path="/schedule/open/:recordId" element={<OpenScheduleRecordPage />} />
+              <Route path='/schedule/edit/:recordId' element = {<ChangeScheduleRecordPage />} />
 
               <Route path="/medicalCards" element={<MedicalCardsPage />} />
               <Route path="/medicalCards/add-card" element= {<CreateCardPage />} />
-              <Route path="/medicalCards/open-card" element={<TothCardPage />} />
-              <Route path="/medicalCards/card/add-record" element={<InsertCardRecordPage />} />
-              <Route path="/medicalCards/card/open-records" element={<TothRecordsPage />} />
-              <Route path="/medicalCards/card/open-record" element={<ChangeCardPage />} />
-              <Route path="/medicalCard/card/change-record" element={<ChangeCardPage />} />
+              <Route path="/medicalCards/open-card/:patientId" element={<TothCardPage />} />
+              <Route path="/medicalCards/card/add-record/:patientId/:toothId" element={<InsertCardRecordPage />} />
+              <Route path="/medicalCards/card/open-records/:patientId/:toothId" element={<TothRecordsPage />} />
+              <Route path="/medicalCards/card/open-record/:patientId/:toothId" element={<OpenTothRecordPage />} />
+              <Route path="/medicalCards/card/change-record/:patientId" element={<ChangeCardPage />} />
 
               <Route path="/doctors" element={<DoctorsPage />} />
-              <Route path= "/doctors/add" element = {<InsertDoctorFormPage />} />
-              <Route path="/doctors/open" element={<OpenDoctorFormPage />} />
+              <Route path="/doctors/add" element = {<InsertDoctorFormPage />} />
+              <Route path="/doctors/open/:doctorId" element={<OpenDoctorFormPage />} />
+              <Route path="/doctors/edit/:doctorId" element={<ChangeDoctorPage />} />
               <Route path="/doctors/schedule" element={<SchedulePage />} />
 
               <Route path="/reports" element={<ReportsPage />} />

@@ -25,6 +25,7 @@ h1{
     background-color: rgb(217, 217, 217);
     padding: 27px;
     border-radius: 15px;
+    overflow-y: scroll;
 }
 .CardsButtonsCreateCard{
     max-width: 1147px;
